@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %} Yangilik qo`shish {% endblock title %}
+
+{% block content %}
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">Yangilik qo`shish
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.media }}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary"> Qo`shish</button>
+
+                    </form>
+
+
+                </div>
+                <div class="col-4"></div>
+
+            </div>
+        </div>
+
+
+{% endblock content %}

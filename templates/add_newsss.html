@@ -1,0 +1,12 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <!-- Teglar maydoni -->
+    <div class="form-group">
+        <label for="tags">Teglar (vergul bilan ajrating)</label>
+        <input type="text" name="tags" class="form-control" id="tags" placeholder="Sport, Texnologiya, Yangiliklar">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Yuborish</button>
+</form>

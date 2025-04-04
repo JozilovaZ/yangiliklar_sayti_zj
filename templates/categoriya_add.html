@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Categoriya qo`shish {% endblock title %}
+
+{% block content %}
+   <div class="container">
+         <h3 class='text-center'> Categoriya qo`shish</h3>
+         <form method="POST">
+             {% csrf_token %}
+             {{ forms.as_p }}
+             <button  type="submit" class="btn btn-success" > Qo`shish  </button>
+
+
+         </form>
+   </div>
+
+
+
+
+{% endblock content %}
+
+
