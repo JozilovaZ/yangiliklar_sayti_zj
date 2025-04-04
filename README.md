@@ -1,1 +1,0 @@
-# yangiliklar_sayti
