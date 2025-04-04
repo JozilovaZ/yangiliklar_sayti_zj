@@ -1,13 +1,10 @@
-from django.contrib.auth.models import User
 from django.shortcuts import render,redirect
 from taggit.models import Tag
 from .models import Contact,Category,Comments,News
 import requests
 from  django.db.models import Q
 from .forms import AddNewsForm,AddCategoryForm
-from django.contrib.auth import login,logout
-from django.views.generic.edit import CreateView
-from django.contrib.auth.forms import UserCreationForm
+
 
 
 
